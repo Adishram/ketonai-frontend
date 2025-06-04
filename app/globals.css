@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-ibm-plex-mono: "IBM Plex Mono", monospace;
+  --font-playfair-display: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-ibm-plex-mono);
+  overflow: hidden;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair-display);
+}
+
+.font-mono {
+  font-family: var(--font-ibm-plex-mono);
+}
+
+/* Custom scrollbar for chat area */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Premium glow effects */
+.glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Glass morphism enhancement */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
