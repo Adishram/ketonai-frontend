@@ -133,7 +133,7 @@ export default function KetonAI() {
 
     try {
       // 3) Fetch the backend in one go (instead of streaming) so we can run our typewriter:
-      const response = await fetch("http://localhost:3000/chat", {
+      const response = await fetch("https://ketonai-backend.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
